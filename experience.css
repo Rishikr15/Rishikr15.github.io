@@ -154,3 +154,10 @@
     font-size: 0.95rem;
   }
 }
+
+@media screen and (max-width: 700px) {
+  #experience .experience-details-container > .about-containers {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
