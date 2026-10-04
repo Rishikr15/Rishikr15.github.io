@@ -1,0 +1,156 @@
+/* PROFESSIONAL EXPERIENCE */
+.work-history-title,
+.skills-heading {
+  text-align: center;
+  color: rgb(85, 85, 85);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.work-history-title {
+  margin: 1.5rem 0;
+}
+
+.work-history {
+  max-width: 1050px;
+  margin: 0 auto 2.5rem;
+  padding-left: 2rem;
+  display: grid;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.work-history::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 0.42rem;
+  width: 2px;
+  background: rgb(210, 210, 210);
+}
+
+.work-card {
+  display: block;
+  width: auto;
+  position: relative;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 1.5rem;
+  background: rgb(250, 250, 250);
+  box-sizing: border-box;
+}
+
+.work-card::before {
+  content: "";
+  position: absolute;
+  top: 1.9rem;
+  left: -2rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: rgb(85, 85, 85);
+  box-shadow: 0 0 0 1px rgb(180, 180, 180);
+}
+
+.work-card--current {
+  border-color: rgb(163, 163, 163);
+}
+
+.work-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.work-card__company {
+  color: rgb(85, 85, 85);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.work-card__role {
+  margin-top: 0.15rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.work-card__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  color: rgb(85, 85, 85);
+  font-size: 0.9rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.work-card__highlights {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: rgb(85, 85, 85);
+  line-height: 1.7;
+}
+
+.work-card__highlights li + li {
+  margin-top: 0.45rem;
+}
+
+.skills-heading {
+  margin: 0 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .work-history-title,
+  .skills-heading {
+    font-size: 1.4rem;
+  }
+
+  .work-history-title {
+    margin-top: 1rem;
+  }
+
+  .work-history {
+    padding-left: 1.35rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .work-history::before {
+    left: 0.25rem;
+  }
+
+  .work-card {
+    padding: 1.15rem;
+    border-radius: 1.15rem;
+  }
+
+  .work-card::before {
+    left: -1.4rem;
+    top: 1.55rem;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .work-card__header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .work-card__role {
+    font-size: 1.15rem;
+  }
+
+  .work-card__meta {
+    align-items: flex-start;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .work-card__highlights {
+    font-size: 0.95rem;
+  }
+}
