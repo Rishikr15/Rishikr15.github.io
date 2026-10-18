@@ -492,3 +492,17 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Keep the email CTA styled like the existing buttons while using a real mailto link. */
+a.contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.contact-email-link:hover {
+  color: white;
+  text-decoration: none;
+}
